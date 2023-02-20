@@ -31,4 +31,4 @@ services:
     command:
       --cortex-port 9001
       # We need to create a cortex user with apikey before enabling this
-      #--cortex-key j+bX5vAF83u7pLyVaPaiAW+VueKyHfKL 
+      --cortex-key ${CORTEX_KEY}
