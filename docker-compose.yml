@@ -20,8 +20,9 @@ services:
       - elasticsearch
     ports:
       - "0.0.0.0:9001:9001"
-    command:
-        --analyzer-url "https://download.thehive-project.org/analyzers.json"
+        #command: '--analyzer-url "https://download.thehive-project.org/analyzers.json"'
+    volumes:
+      - './vol/cortex/application.conf:/etc/cortex/application.conf'
 
   thehive:
     image: thehiveproject/thehive:3.5.0-1
@@ -30,7 +31,7 @@ services:
       - cortex
     ports:
       - "0.0.0.0:9000:9000"
-    command: '--cortex-port 9001 --cortex-key ${CORTEX_KEY}'
+    command: '--cortex-port 9001' # --cortex-key ${CORTEX_KEY}'
 
 volumes:
   es-data:
