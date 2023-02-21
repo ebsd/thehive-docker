@@ -1,6 +1,7 @@
 version: "2"
 services:
   elasticsearch:
+    #privileged: true
     image: elasticsearch:7.9.1
     environment:
       - http.host=0.0.0.0
@@ -10,7 +11,8 @@ services:
         soft: 65536
         hard: 65536
     volumes:
-      - ./vol/data:/usr/share/elasticsearch/data
+      - es-data:/usr/share/elasticsearch/data
+      #- ./vol/elasticsearch/logs:/usr/share/elasticsearch/logs
 
   cortex:
     image: thehiveproject/cortex:3.1.0-1
@@ -28,7 +30,7 @@ services:
       - cortex
     ports:
       - "0.0.0.0:9000:9000"
-    command:
-      --cortex-port 9001
-      # We need to create a cortex user with apikey before enabling this
-      --cortex-key ${CORTEX_KEY}
+    command: '--cortex-port 9001 --cortex-key ${CORTEX_KEY}'
+
+volumes:
+  es-data:
