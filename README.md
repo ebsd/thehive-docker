@@ -1,6 +1,6 @@
 
 https://github.com/TheHive-Project/CortexDocs/blob/master/admin/quick-start.md
-Cr�er un user avec api key dans Cortex.
+Créer un user avec api key dans Cortex.
 PLacer la apikey dans la config Thiehive.
 Démarrer.
 Vérifier dans thehive > compte user > about que le statut de Cortex soit OK.
