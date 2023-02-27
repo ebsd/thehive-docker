@@ -1,5 +1,6 @@
 
 https://github.com/TheHive-Project/CortexDocs/blob/master/admin/quick-start.md
+
 - Créer un user avec api key dans Cortex.
 - PLacer la apikey dans la config Thiehive.
 - Démarrer.
@@ -9,3 +10,5 @@ https://github.com/TheHive-Project/CortexDocs/blob/master/admin/quick-start.md
 - Cr�er un admin pour la novuelle orga.
 - Se connecter avec le compte admin de la nouvelle orga.
 - Dans Orga > Analyzers Configp
+
+Pour l'installation de [Shuffle lire ici](https://github.com/Shuffle/Shuffle/blob/main/.github/install-guide.md).
