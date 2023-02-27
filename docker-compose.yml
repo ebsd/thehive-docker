@@ -12,7 +12,6 @@ services:
         hard: 65536
     volumes:
       - es-data:/usr/share/elasticsearch/data
-      #- ./vol/elasticsearch/logs:/usr/share/elasticsearch/logs
 
   cortex:
     image: thehiveproject/cortex:3.1.0-1
@@ -20,7 +19,6 @@ services:
       - elasticsearch
     ports:
       - "0.0.0.0:9001:9001"
-        #command: '--analyzer-url "https://download.thehive-project.org/analyzers.json"'
     command: '--start-docker'
     volumes:
       - './vol/cortex/application.conf:/etc/cortex/application.conf'
