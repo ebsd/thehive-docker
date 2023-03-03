@@ -1,5 +1,5 @@
-
-https://github.com/TheHive-Project/CortexDocs/blob/master/admin/quick-start.md
+# The Hive et Cortex 
+[Doc Cortex](https://github.com/TheHive-Project/CortexDocs/blob/master/admin/quick-start.md)
 
 - Créer un compte "superadmin" lors de la 1ere connexion
 - Créer une organisation dans Cortex.
